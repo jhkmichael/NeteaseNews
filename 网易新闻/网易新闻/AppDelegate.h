@@ -11,7 +11,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+//target :TargetNameTests, :exclusive => true do
+//# pod 'Kiwi'
+//end
 
 @end
 
