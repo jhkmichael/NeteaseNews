@@ -14,6 +14,10 @@
 		510837041C95927F00257BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510837021C95927F00257BED /* Main.storyboard */; };
 		510837061C95927F00257BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510837051C95927F00257BED /* Assets.xcassets */; };
 		510837091C95927F00257BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510837071C95927F00257BED /* LaunchScreen.storyboard */; };
+		516707C61C95A0C800C71E26 /* LoopViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 516707C51C95A0C800C71E26 /* LoopViewModel.m */; };
+		516707C81C95A1A200C71E26 /* Loopview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516707C71C95A1A200C71E26 /* Loopview.storyboard */; };
+		516707CB1C95A39600C71E26 /* LoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516707CA1C95A39600C71E26 /* LoopViewController.m */; };
+		516707CF1C95AE2E00C71E26 /* KENetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 516707CE1C95AE2E00C71E26 /* KENetTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,13 @@
 		510837051C95927F00257BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		510837081C95927F00257BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5108370A1C95927F00257BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		516707C41C95A0C800C71E26 /* LoopViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopViewModel.h; sourceTree = "<group>"; };
+		516707C51C95A0C800C71E26 /* LoopViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopViewModel.m; sourceTree = "<group>"; };
+		516707C71C95A1A200C71E26 /* Loopview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loopview.storyboard; sourceTree = "<group>"; };
+		516707C91C95A39600C71E26 /* LoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopViewController.h; sourceTree = "<group>"; };
+		516707CA1C95A39600C71E26 /* LoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopViewController.m; sourceTree = "<group>"; };
+		516707CD1C95AE2E00C71E26 /* KENetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KENetTool.h; sourceTree = "<group>"; };
+		516707CE1C95AE2E00C71E26 /* KENetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KENetTool.m; sourceTree = "<group>"; };
 		77F92A0BC4AA132AAA4946D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE78F731859A37BDEF50B081 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +76,8 @@
 		510836F81C95927F00257BED /* 网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				516707CC1C95ABBA00C71E26 /* Tool */,
+				516707C01C959F9800C71E26 /* LoopView */,
 				510836FC1C95927F00257BED /* AppDelegate.h */,
 				510836FD1C95927F00257BED /* AppDelegate.m */,
 				510836FF1C95927F00257BED /* ViewController.h */,
@@ -84,6 +97,51 @@
 				510836FA1C95927F00257BED /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		516707C01C959F9800C71E26 /* LoopView */ = {
+			isa = PBXGroup;
+			children = (
+				516707C31C959FD900C71E26 /* controller */,
+				516707C21C959FD200C71E26 /* view */,
+				516707C11C959FBF00C71E26 /* model */,
+			);
+			name = LoopView;
+			sourceTree = "<group>";
+		};
+		516707C11C959FBF00C71E26 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				516707C41C95A0C800C71E26 /* LoopViewModel.h */,
+				516707C51C95A0C800C71E26 /* LoopViewModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		516707C21C959FD200C71E26 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				516707C71C95A1A200C71E26 /* Loopview.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		516707C31C959FD900C71E26 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				516707C91C95A39600C71E26 /* LoopViewController.h */,
+				516707CA1C95A39600C71E26 /* LoopViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		516707CC1C95ABBA00C71E26 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				516707CD1C95AE2E00C71E26 /* KENetTool.h */,
+				516707CE1C95AE2E00C71E26 /* KENetTool.m */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 		B1C5E7E7C088B5B5A9D0D800 /* Pods */ = {
@@ -167,6 +225,7 @@
 				510837091C95927F00257BED /* LaunchScreen.storyboard in Resources */,
 				510837061C95927F00257BED /* Assets.xcassets in Resources */,
 				510837041C95927F00257BED /* Main.storyboard in Resources */,
+				516707C81C95A1A200C71E26 /* Loopview.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +286,10 @@
 			files = (
 				510837011C95927F00257BED /* ViewController.m in Sources */,
 				510836FE1C95927F00257BED /* AppDelegate.m in Sources */,
+				516707C61C95A0C800C71E26 /* LoopViewModel.m in Sources */,
 				510836FB1C95927F00257BED /* main.m in Sources */,
+				516707CB1C95A39600C71E26 /* LoopViewController.m in Sources */,
+				516707CF1C95AE2E00C71E26 /* KENetTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

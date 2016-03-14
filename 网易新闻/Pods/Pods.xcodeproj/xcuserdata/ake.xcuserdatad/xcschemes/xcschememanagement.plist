@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HMNSObject-Log.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D7B64B481DE1653CDFEF9DC0A650BD7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2602F3D0DAC534568B6AD7EEA0DD1959</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2BD0C9D656485354FAF1A693AF358703</key>
+		<key>2C80F4EC7D4F059345AE97F9AF0455C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>341A07059EA72590DDFC408E6CD8459B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8199FA345234E242A09461E2C7B5426</key>
 		<dict>
 			<key>primary</key>
 			<true/>
