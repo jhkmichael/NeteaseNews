@@ -12,7 +12,7 @@
 @implementation LoopViewModel
 
 //异步网络加载, 成功后回调 success , (seccess 由 controller 那里完成 )
-+(void)loopViewModel:(void (^)(NSArray * destArr))successs{
++(void)loopViewModelWithSuccess:(void (^)(NSArray * destArr))successs{
     //加载轮播器的网络数据 , 这里就用到自己创建的 单例网络工具类对象 来发送请求啦
     [[[KENetTool netTool] GET:@"ad/headline/0-4.html" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         NSDictionary *loopViewTotalDict  = responseObject;

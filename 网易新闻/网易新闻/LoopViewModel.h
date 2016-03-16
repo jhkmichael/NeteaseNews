@@ -14,7 +14,7 @@
 
 
 //模型三个标准方法
-+(void)loopViewModel:(void (^)(NSArray * desArr))successs;
++(void)loopViewModelWithSuccess:(void (^)(NSArray * desArr))successs;
 +(instancetype)loopViewWithDict:(NSDictionary *)dict;
 -(instancetype)initWithDict:(NSDictionary *)dict;
 @end
