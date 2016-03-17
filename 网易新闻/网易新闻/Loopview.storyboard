@@ -1,60 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v7e-EM-Zsm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4NY-Ta-Aat">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Loop View Controller-->
-        <scene sceneID="aJb-Yu-atm">
+        <scene sceneID="Qe0-JD-FwG">
             <objects>
-                <viewController id="v7e-EM-Zsm" customClass="LoopViewController" sceneMemberID="viewController">
+                <viewController id="4NY-Ta-Aat" customClass="LoopViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WRt-jn-5B0"/>
-                        <viewControllerLayoutGuide type="bottom" id="PzY-w4-ehy"/>
+                        <viewControllerLayoutGuide type="top" id="N1i-sF-x7X"/>
+                        <viewControllerLayoutGuide type="bottom" id="6cs-ru-TgO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="geL-wS-0bf">
+                    <view key="view" contentMode="scaleToFill" id="ZVa-6R-foI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x5n-Re-imv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tm0-wt-2BN">
-                                    <size key="itemSize" width="158" height="154"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Euk-y4-InH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="537"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9O2-Vc-Ubb">
+                                    <size key="itemSize" width="293" height="381"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="7CA-aC-8fO">
-                                        <rect key="frame" x="0.0" y="0.0" width="158" height="154"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="loopView" id="YLP-VS-vxO" customClass="LoopViewCell">
+                                        <rect key="frame" x="14" y="0.0" width="293" height="381"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="158" height="154"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="293" height="381"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img_03" translatesAutoresizingMaskIntoConstraints="NO" id="WyK-d1-TZK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="267" height="266"/>
+                                                </imageView>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <size key="customSize" width="158" height="154"/>
+                                        <color key="backgroundColor" red="1" green="0.37539639172377837" blue="0.33622448075299993" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="WyK-d1-TZK" secondAttribute="bottom" id="8YG-Pc-9Y5"/>
+                                            <constraint firstItem="WyK-d1-TZK" firstAttribute="top" secondItem="YLP-VS-vxO" secondAttribute="top" id="Egm-hI-wRs"/>
+                                            <constraint firstAttribute="trailing" secondItem="WyK-d1-TZK" secondAttribute="trailing" id="KAg-wg-9K3"/>
+                                            <constraint firstItem="WyK-d1-TZK" firstAttribute="top" secondItem="YLP-VS-vxO" secondAttribute="top" id="Uno-zg-gZv"/>
+                                            <constraint firstItem="WyK-d1-TZK" firstAttribute="centerX" secondItem="YLP-VS-vxO" secondAttribute="centerX" id="dn7-Eo-YtQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="WyK-d1-TZK" secondAttribute="trailing" id="gOR-mC-5Sl"/>
+                                            <constraint firstItem="WyK-d1-TZK" firstAttribute="centerY" secondItem="YLP-VS-vxO" secondAttribute="centerY" id="shv-Tr-kAx"/>
+                                            <constraint firstAttribute="bottom" secondItem="WyK-d1-TZK" secondAttribute="bottom" id="zqE-SI-jUr"/>
+                                        </constraints>
+                                        <size key="customSize" width="293" height="381"/>
+                                        <connections>
+                                            <outlet property="iconView" destination="WyK-d1-TZK" id="Oyn-Ht-P9p"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="x5n-Re-imv" secondAttribute="trailing" id="SjK-X3-rxv"/>
-                            <constraint firstItem="PzY-w4-ehy" firstAttribute="top" secondItem="x5n-Re-imv" secondAttribute="bottom" constant="40" id="TVc-hR-7ub"/>
-                            <constraint firstItem="x5n-Re-imv" firstAttribute="top" secondItem="geL-wS-0bf" secondAttribute="top" id="eHH-cN-0yU"/>
-                            <constraint firstItem="x5n-Re-imv" firstAttribute="leading" secondItem="geL-wS-0bf" secondAttribute="leading" id="pcg-Zs-Eiq"/>
+                            <constraint firstItem="Euk-y4-InH" firstAttribute="leading" secondItem="ZVa-6R-foI" secondAttribute="leading" id="Ep6-YF-EV9"/>
+                            <constraint firstAttribute="trailing" secondItem="Euk-y4-InH" secondAttribute="trailing" id="FJ0-BM-6ah"/>
+                            <constraint firstItem="Euk-y4-InH" firstAttribute="top" secondItem="ZVa-6R-foI" secondAttribute="top" id="U0E-gu-N1m"/>
+                            <constraint firstItem="6cs-ru-TgO" firstAttribute="top" secondItem="Euk-y4-InH" secondAttribute="bottom" constant="31" id="YnK-RO-Emy"/>
+                            <constraint firstItem="6cs-ru-TgO" firstAttribute="top" secondItem="Euk-y4-InH" secondAttribute="bottom" constant="31" id="xL1-db-jcQ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="x5n-Re-imv" id="Hn3-1Q-fSL"/>
-                        <outlet property="flowLayout" destination="Tm0-wt-2BN" id="RfP-5x-ASs"/>
+                        <outlet property="collectionView" destination="Euk-y4-InH" id="N5s-yl-1F6"/>
+                        <outlet property="flowLayout" destination="9O2-Vc-Ubb" id="iYa-La-pEp"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aLA-yi-WKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZD1-5O-sgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="146"/>
+            <point key="canvasLocation" x="55" y="293"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img_03" width="600" height="260"/>
+    </resources>
 </document>

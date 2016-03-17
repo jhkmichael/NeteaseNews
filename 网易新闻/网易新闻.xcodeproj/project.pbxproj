@@ -10,14 +10,13 @@
 		203AA9A9B568798CA5A8D36F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F92A0BC4AA132AAA4946D0 /* libPods.a */; };
 		510836FB1C95927F00257BED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 510836FA1C95927F00257BED /* main.m */; };
 		510836FE1C95927F00257BED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 510836FD1C95927F00257BED /* AppDelegate.m */; };
-		510837011C95927F00257BED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510837001C95927F00257BED /* ViewController.m */; };
-		510837041C95927F00257BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510837021C95927F00257BED /* Main.storyboard */; };
 		510837061C95927F00257BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510837051C95927F00257BED /* Assets.xcassets */; };
 		510837091C95927F00257BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510837071C95927F00257BED /* LaunchScreen.storyboard */; };
 		516707C61C95A0C800C71E26 /* LoopViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 516707C51C95A0C800C71E26 /* LoopViewModel.m */; };
 		516707C81C95A1A200C71E26 /* Loopview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516707C71C95A1A200C71E26 /* Loopview.storyboard */; };
 		516707CB1C95A39600C71E26 /* LoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516707CA1C95A39600C71E26 /* LoopViewController.m */; };
 		516707CF1C95AE2E00C71E26 /* KENetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 516707CE1C95AE2E00C71E26 /* KENetTool.m */; };
+		51CDD3E31C9A59B300DDAB65 /* LoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CDD3E21C9A59B300DDAB65 /* LoopViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +25,6 @@
 		510836FA1C95927F00257BED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		510836FC1C95927F00257BED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		510836FD1C95927F00257BED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		510836FF1C95927F00257BED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		510837001C95927F00257BED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		510837031C95927F00257BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		510837051C95927F00257BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		510837081C95927F00257BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5108370A1C95927F00257BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +35,8 @@
 		516707CA1C95A39600C71E26 /* LoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopViewController.m; sourceTree = "<group>"; };
 		516707CD1C95AE2E00C71E26 /* KENetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KENetTool.h; sourceTree = "<group>"; };
 		516707CE1C95AE2E00C71E26 /* KENetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KENetTool.m; sourceTree = "<group>"; };
+		51CDD3E11C9A59B300DDAB65 /* LoopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopViewCell.h; sourceTree = "<group>"; };
+		51CDD3E21C9A59B300DDAB65 /* LoopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopViewCell.m; sourceTree = "<group>"; };
 		77F92A0BC4AA132AAA4946D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE78F731859A37BDEF50B081 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,14 +76,6 @@
 			children = (
 				516707CC1C95ABBA00C71E26 /* Tool */,
 				516707C01C959F9800C71E26 /* LoopView */,
-				510836FC1C95927F00257BED /* AppDelegate.h */,
-				510836FD1C95927F00257BED /* AppDelegate.m */,
-				510836FF1C95927F00257BED /* ViewController.h */,
-				510837001C95927F00257BED /* ViewController.m */,
-				510837021C95927F00257BED /* Main.storyboard */,
-				510837051C95927F00257BED /* Assets.xcassets */,
-				510837071C95927F00257BED /* LaunchScreen.storyboard */,
-				5108370A1C95927F00257BED /* Info.plist */,
 				510836F91C95927F00257BED /* Supporting Files */,
 			);
 			path = "网易新闻";
@@ -94,6 +84,11 @@
 		510836F91C95927F00257BED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				510836FC1C95927F00257BED /* AppDelegate.h */,
+				510836FD1C95927F00257BED /* AppDelegate.m */,
+				510837051C95927F00257BED /* Assets.xcassets */,
+				510837071C95927F00257BED /* LaunchScreen.storyboard */,
+				5108370A1C95927F00257BED /* Info.plist */,
 				510836FA1C95927F00257BED /* main.m */,
 			);
 			name = "Supporting Files";
@@ -122,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				516707C71C95A1A200C71E26 /* Loopview.storyboard */,
+				51CDD3E11C9A59B300DDAB65 /* LoopViewCell.h */,
+				51CDD3E21C9A59B300DDAB65 /* LoopViewCell.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -224,7 +221,6 @@
 			files = (
 				510837091C95927F00257BED /* LaunchScreen.storyboard in Resources */,
 				510837061C95927F00257BED /* Assets.xcassets in Resources */,
-				510837041C95927F00257BED /* Main.storyboard in Resources */,
 				516707C81C95A1A200C71E26 /* Loopview.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,11 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				510837011C95927F00257BED /* ViewController.m in Sources */,
 				510836FE1C95927F00257BED /* AppDelegate.m in Sources */,
 				516707C61C95A0C800C71E26 /* LoopViewModel.m in Sources */,
 				510836FB1C95927F00257BED /* main.m in Sources */,
 				516707CB1C95A39600C71E26 /* LoopViewController.m in Sources */,
+				51CDD3E31C9A59B300DDAB65 /* LoopViewCell.m in Sources */,
 				516707CF1C95AE2E00C71E26 /* KENetTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +292,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		510837021C95927F00257BED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				510837031C95927F00257BED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		510837071C95927F00257BED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

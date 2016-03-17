@@ -8,5 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoopViewController :  UIViewController
+@interface LoopViewController : UIViewController
+
 @end
